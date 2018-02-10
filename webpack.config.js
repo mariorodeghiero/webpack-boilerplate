@@ -1,5 +1,7 @@
-var HtmlWebpackPlugin = require("html-webpack-plugin");
-var HWPConfig = new HtmlWebpackPlugin({
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+const HWPConfig = new HtmlWebpackPlugin({
   template: __dirname + "/src/index.html",
   file: "index.html",
   inject: "body"
@@ -23,7 +25,9 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: ExtractTextPlugin.extract({
+          use: ["css-loader", "sass-loader"]
+        })
       },
       {
         test: /\.(png|jpg)$/,
@@ -37,5 +41,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [HWPConfig]
+  plugins: [HWPConfig, new ExtractTextPlugin("css/styles.css")]
 };

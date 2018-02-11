@@ -1,0 +1,11 @@
+@import "vars";
+
+body {
+  color: $color-bck;
+}
+
+.icon {
+  width: 600px;
+  height: 400px;
+  background: url("../img/logo.png") no-repeat;
+}

@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 const HWPConfig = new HtmlWebpackPlugin({
   template: __dirname + "/src/index.html",
@@ -57,5 +58,15 @@ module.exports = {
       }
     ]
   },
-  plugins: [HWPConfig, new ExtractTextPlugin("css/styles.css")]
+  plugins: [
+    HWPConfig,
+    new ExtractTextPlugin("css/styles.css"),
+    new UglifyJsPlugin({
+      uglifyOptions: {
+        compress: { warnings: false },
+        output: { comments: false },
+        sourceMap: true
+      }
+    })
+  ]
 };

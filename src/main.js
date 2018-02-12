@@ -1,8 +1,8 @@
 import "./sass/main.scss";
-import icon from "./img/logo.png";
+import "./js/console";
 
-document.querySelector("#icon").innerHTML = `<img src="${icon}" />`;
+const name = "mariorodeghiero";
 
 console.log("------------------------------------");
-console.log("Hello webpack!!    ");
+console.log(name);
 console.log("------------------------------------");

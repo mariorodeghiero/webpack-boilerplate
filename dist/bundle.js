@@ -78,15 +78,15 @@ module.exports = __webpack_require__(1);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sass_main_scss__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sass_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__sass_main_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_logo_png__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_logo_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__img_logo_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_console__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_console___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_console__);
 
 
 
-document.querySelector("#icon").innerHTML = "<img src=\"" + __WEBPACK_IMPORTED_MODULE_1__img_logo_png___default.a + "\" />";
+var name = "mariorodeghiero";
 
 console.log("------------------------------------");
-console.log("Hello webpack!!    ");
+console.log(name);
 console.log("------------------------------------");
 
 /***/ }),
@@ -113,8 +113,8 @@ var update = __webpack_require__(7)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
-		var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./main.scss");
+	module.hot.accept("!!../../node_modules/css-loader/index.js??ref--1-1!../../node_modules/sass-loader/lib/loader.js??ref--1-2!./main.scss", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js??ref--1-1!../../node_modules/sass-loader/lib/loader.js??ref--1-2!./main.scss");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -144,12 +144,12 @@ if(false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var escape = __webpack_require__(4);
-exports = module.exports = __webpack_require__(5)(false);
+exports = module.exports = __webpack_require__(5)(true);
 // imports
 
 
 // module
-exports.push([module.i, "body {\n  color: #f01c00; }\n\n.images {\n  height: 1780px;\n  width: 880px;\n  background: url(" + escape(__webpack_require__(6)) + "); }\n", ""]);
+exports.push([module.i, "body {\n  color: #d4623f; }\n\n.icon {\n  width: 600px;\n  height: 400px;\n  background: url(" + escape(__webpack_require__(6)) + ") no-repeat; }\n", "", {"version":3,"sources":["/Users/rodeghiero/developer/boiler-plates/webpack/src/sass/src/sass/main.scss","/Users/rodeghiero/developer/boiler-plates/webpack/src/sass/src/sass/_vars.scss"],"names":[],"mappings":"AACA;EACE,eCFiB,EDGlB;;AAED;EACE,aAAY;EACZ,cAAa;EACb,oDAA4C,EAC7C","file":"main.scss","sourcesContent":["@import \"vars\";\nbody {\n  color: $color-bck;\n}\n\n.icon {\n  width: 600px;\n  height: 400px;\n  background: url(\"../img/logo.png\") no-repeat;\n}","$color-bck: #d4623f;\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -262,7 +262,7 @@ function toComment(sourceMap) {
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/back.jpg";
+module.exports = __webpack_require__.p + "img/logo.png";
 
 /***/ }),
 /* 7 */
@@ -743,9 +743,11 @@ module.exports = function (css) {
 
 /***/ }),
 /* 9 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "img/logo.png";
+console.log("------------------------------------");
+console.log("Hello webpack !!!!");
+console.log("------------------------------------");
 
 /***/ })
 /******/ ]);

@@ -1,10 +1,10 @@
 @import "vars";
 body {
-  color: $cow-color;
+  color: $color-bck;
 }
 
-.images {
-  height: 1780px;
-  width: 880px;
-  background: url("../img/back.jpg");
+.icon {
+  width: 600px;
+  height: 400px;
+  background: url("../img/back.jpg") no-repeat;
 }

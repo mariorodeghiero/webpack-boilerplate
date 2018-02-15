@@ -13,25 +13,27 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: __dirname + "/dist",
-    publicPath: "/"
+    publicPath: "./"
   },
   devtool: "source-map",
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader",
         query: {
-          presets: [["es2015", { modules: false }]]
+          presets: [
+            ["es2015", {
+              modules: false
+            }]
+          ]
         }
       },
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: [
-            {
+          use: [{
               loader: "css-loader",
               options: {
                 sourceMap: true
@@ -63,8 +65,12 @@ module.exports = {
     new ExtractTextPlugin("css/styles.css"),
     new UglifyJsPlugin({
       uglifyOptions: {
-        compress: { warnings: false },
-        output: { comments: false },
+        compress: {
+          warnings: false
+        },
+        output: {
+          comments: false
+        },
         sourceMap: true
       }
     })

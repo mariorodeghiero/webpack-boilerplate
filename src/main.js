@@ -1,8 +1,10 @@
-import "./sass/main.scss";
-import "./js/console";
+import notification from './js/notification';
+import './main.scss';
+// import logo from './img/logo.png';
 
-const name = "mariorodeghiero";
+notification.log("Mário A. A. Rodeghiero");
+// notification.notify('Bernardo k. Rodeghiero');
 
-console.log("------------------------------------");
-console.log(name);
-console.log("------------------------------------");
+
+let name = 'tofu';
+// console.log(name);

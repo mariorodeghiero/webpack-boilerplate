@@ -1,13 +1,18 @@
-h1 {
-    color: $color-red
+h1,
+p {
+  color: $color-white;
+  padding: 10px;
 }
 
-.test {
-    width: 400px;
-    height: 400px;
-    background: url('./img/logo.png')
+body {
+  background-color: $bck-color;
+  text-align: center;
 }
 
-.two {
-    color: $color-blue;
+.logo {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  background: url('./img/logo.png') no-repeat;
+  padding-bottom: 30px;
 }

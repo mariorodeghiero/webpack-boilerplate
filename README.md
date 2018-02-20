@@ -64,12 +64,6 @@ What things you need to install the software and how to install them
 
 ### Installing
 
-
-```
-npm instal webpack-boilerplate-mr
-```
-or
-
 Clone this repository
 
 ```

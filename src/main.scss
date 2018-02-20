@@ -1,14 +1,2 @@
-@import './sass/_vars.scss';
-h1 {
-    color: $color-red
-}
-
-.test {
-    width: 400px;
-    height: 400px;
-    background: url('./img/logo.png')
-}
-
-.two {
-    color: $color-blue;
-}
+@import './scss/abstracts/__abstracts-dir.scss';
+@import './scss/layouts/__layouts-dir.scss';

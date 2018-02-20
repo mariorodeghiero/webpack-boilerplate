@@ -88,7 +88,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__main_scss__);
 
 
-// import logo from './img/logo.png';
 
 __WEBPACK_IMPORTED_MODULE_0__js_notification__["a" /* default */].log("Mário A. A. Rodeghiero");
 // notification.notify('Bernardo k. Rodeghiero');

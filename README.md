@@ -1,4 +1,4 @@
-# Webpack ^3.x.x boiler-plate
+# Webpack 3.x.x boiler-plate
 
 Repository created for study and creation of a boilerplate using webpack ^ 3.x.x
 
@@ -63,6 +63,12 @@ What things you need to install the software and how to install them
 * NPM Package Manager
 
 ### Installing
+
+
+```
+npm instal webpack-boilerplate-mr
+```
+or
 
 Clone this repository
 

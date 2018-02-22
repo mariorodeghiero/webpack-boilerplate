@@ -33,27 +33,26 @@ src/
             └── __vendors-dir.scss
 ```
 
-
 ## Plugins and Loaders
 
-- babel-preset-es2015
-- clean-webpack-plugin
-- css-loader"
-- extract-text-webpack-plugin
-- file-loader
-- html-webpack-plugin
-- img-loader
-- node-sass
-- purify-css
-- purifycss-webpack
-- raw-loader
-- sass-loader
-- style-loader
-- uglifyjs-webpack-plugin
-- webpack
-- webpack-dev-server
-- babel-core
-- babel-loader
+* babel-preset-es2015
+* clean-webpack-plugin
+* css-loader"
+* extract-text-webpack-plugin
+* file-loader
+* html-webpack-plugin
+* img-loader
+* node-sass
+* purify-css
+* purifycss-webpack
+* raw-loader
+* sass-loader
+* style-loader
+* uglifyjs-webpack-plugin
+* webpack
+* webpack-dev-server
+* babel-core
+* babel-loader
 
 ### Prerequisites
 
@@ -69,26 +68,31 @@ Clone this repository
 ```
 git clone https://github.com/mariorodeghiero/webpack-boilerplate.git
 ```
+
 Installing the dependencies from the NPM Package Manager
+
 ```
 npm install
 ```
+
 To start the development environment, run the following command:
 
 ```
 npm run dev
 ```
+
 **Note:** This command also performs a clear in the **dist** folder and build again.
 
 ```
-npm run dev-server
+npm run server
 ```
 
-After run, open the browser window at http://localhost:8080
+After run, the browser open window automatically at http://localhost:8080
 
 ## Deployment
 
 Run the command below to deploy, minimizing All Files.
+
 ```
 npm run prod
 ```

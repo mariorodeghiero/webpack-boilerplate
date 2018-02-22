@@ -1,1 +1,17 @@
-h1,p{color:#f0f6f7;padding:10px}body{background-color:#156077;text-align:center}.logo{margin:0 auto;width:400px;height:400px;background:url(img/logo.0b6284384bb36a10bacc2e53c0b85c7c.png) no-repeat;padding-bottom:30px}
+h1,p {
+  color: #f0f6f7;
+  padding: 10px;
+}
+
+body {
+  background-color: #156077;
+  text-align: center;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  background: url(img/logo.0b6284384bb36a10bacc2e53c0b85c7c.png) no-repeat;
+  padding-bottom: 30px;
+}
